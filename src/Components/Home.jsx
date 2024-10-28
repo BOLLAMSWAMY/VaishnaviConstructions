@@ -45,7 +45,7 @@ function Home() {
         RMC‘s full form is Ready Mixed Concrete. It is manufactured in a batching plant or factory according to the standard specifications that are required. After being prepared it is delivered to the construction location in two different ways. 
         </p>
       </div>
-      <div className="iso" >
+      <div className="iso">
         <img src={isoImg} alt="" />
       </div>
 <div className='enquire'>
