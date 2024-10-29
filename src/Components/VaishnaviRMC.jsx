@@ -1,15 +1,14 @@
 import React from 'react'
-import DarkMap from '../assets/DarkMap.png'
 import LightMap from '../assets/LightMap.png'
 import G1 from '../assets/ServiceAsserts/RMCImgs/G1.png'
 import G2 from '../assets/ServiceAsserts/RMCImgs/G2.png'
 import G3 from '../assets/ServiceAsserts/RMCImgs/G3.png'
 import RMC_hero from '../assets/ServiceAsserts/RMCImgs/RMC_hero.png'
+import RMCMap from '../assets/ServiceAsserts/RMCImgs/RMCMap.png'
 import RMCTrucks from '../assets/ServiceAsserts/RMCImgs/RMCTrucks.png'
 import whatsappImg from '../assets/whatsappImg.png'
 import { FormComponent, InputComponent } from './Form'
 import { ContentIntro, ExtraSmallText, GalleryImg, GallerySection, HeroSection, LocationCard, SmallText, TheameBtn, TheameLargeText, WhatsappIcon, WhiteDiv, XlText } from './styledComponents'
-
 
 function VaishnaviRMC() {
 
@@ -17,7 +16,7 @@ function VaishnaviRMC() {
     <>
     <HeroSection style={{height:'auto', padding:'10rem'}} bgImage={RMC_hero} >
        <div style={{display:'flex', flexDirection:'column', gap:'2rem'}}>
-       <p >Precision-Mixed Concrete for Every Project</p>
+       <p className='HeroText' >Precision-Mixed Concrete for Every Project</p>
        <SmallText style={{color:'whitesmoke'}}>RMC‘s full form is Ready Mixed Concrete. It is manufactured in a batching plant or factory according to the standard specifications that are required. After being prepared it is delivered to the construction location in two different ways. </SmallText>
        </div>
        <div>
@@ -99,7 +98,7 @@ function VaishnaviRMC() {
                 </div>
                 <TheameBtn style={{width:'100%', borderRadius:"5px"}}>Get In Touch</TheameBtn>
                 </LocationCard>
-            <img src={DarkMap} className='LocationMap'/>
+            <img src={RMCMap} className='LocationMap'/>
         </div>
 
 

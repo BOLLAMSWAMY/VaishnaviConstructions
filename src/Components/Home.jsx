@@ -1,17 +1,6 @@
 // import React from 'react'
-import './Home.css'
-import './HomeMediaQueries.css'
-import isoImg from '../assets/isoImg.png'
-import Whatsapp from '../assets/whatsapp.png'
-import lastSec from '../assets/last-section.png'
-import listType from '../assets/listType.png'
-import completedOne from '../assets/completed1.png'
-import completedTwo from '../assets/completed2.png'
-import completedThree from '../assets/completed3.png'
-import vehicleOne from '../assets/vehicleOne.png'
-import vehicleTwo from '../assets/vehicleTwo.png'
-import vehicleThree from '../assets/vehicleThree.png'
-import Testimony from '../assets/require.png'
+import { useState } from 'react'
+import { Link } from "react-router-dom"
 import companyOne from '../assets/company1.png'
 import companyTwo from '../assets/company2.png'
 import companyThree from '../assets/company3.png'
@@ -20,14 +9,25 @@ import companyFive from '../assets/company5.png'
 import companySix from '../assets/company6.png'
 import companySeven from '../assets/company7.png'
 import companyEight from '../assets/company8.png'
+import completedOne from '../assets/completed1.png'
+import completedTwo from '../assets/completed2.png'
+import completedThree from '../assets/completed3.png'
+import isoImg from '../assets/isoImg.png'
+import lastSec from '../assets/last-section.png'
+import listType from '../assets/listType.png'
+import Testimony from '../assets/require.png'
 import site1 from '../assets/site1.png'
 import site2 from '../assets/site2.png'
 import site3 from '../assets/site3.png'
 import site4 from '../assets/site4.png'
 import sustainabilityImage from '../assets/sustainabilityImage.png'
 import testimonyImg from '../assets/testimonyImg.png'
-import { useState } from 'react'
-import { Link } from "react-router-dom";
+import vehicleOne from '../assets/vehicleOne.png'
+import vehicleThree from '../assets/vehicleThree.png'
+import vehicleTwo from '../assets/vehicleTwo.png'
+import Whatsapp from '../assets/whatsapp.png'
+import './Home.css'
+import './HomeMediaQueries.css'
 function Home() {
 
   let [activeItem,setActiveItem]=useState('Premiere Mix')
@@ -119,8 +119,8 @@ function Home() {
     <p>Ultra-luxe, self-sustaining apartments that combine prime location, sound infrastructure, and best-in-class amenities, bringing economic prosperity and tremendous value to the residents.    </p>
   </div>
   <div className='buttonGrp'>
-    <button>Vaishnavi MRC</button>
-    <button>RMK Bricks</button>
+    <button>Vaishnavi RMC</button>
+    <button>MRK Bricks</button>
     <button>Vaishnavi Bricks</button>
     <button>Vaishnavi Crushers</button>
   </div>
@@ -131,7 +131,7 @@ function Home() {
 </div>
 
 <div className="section-three">
-<Link to='/vaishnavi-rmc' className='section-three-card'>
+<Link to='/vaishnavi-rmc'   className='section-three-card'>
   <div>
 <div>
 <h2>Vaishnavi RMC</h2>
@@ -205,13 +205,13 @@ RMC‘s full form is Ready Mixed Concrete. It is manufactured in a batching plan
 
 <div className="section-five">
 <div>
-    <img src={vehicleThree} alt="" />
+    <img src={vehicleThree} alt="" className='Img1' />
   </div>
   <div>
-    <img src={vehicleOne} alt="" />
+    <img src={vehicleOne} alt="" className='Img2' />
   </div>
   <div>
-    <img src={vehicleTwo} alt="" />
+    <img src={vehicleTwo} alt="" className='Img3' />
   </div>
 </div>
 
@@ -334,78 +334,6 @@ RMC‘s full form is Ready Mixed Concrete. It is manufactured in a batching plan
 
   </div>
 
-{/* <div>
-  <div className="projects-grade-left">
-    <h3>Mixers</h3>
-    <ul>
-      <li>Premiere Mix</li>
-      <li>Residential Mix</li>
-      <li>Micro Tech Mix</li>
-      <li>Special Products</li>
-    </ul>
-</div>
-<div className="projects-grade-right">
-  <div>
-    <h1>M25 GRADE</h1>
-    <p><strong>Mix Ratio:</strong> 1:1:2 (1 cement, 1 sand and 2 aggregate)</p>
-    <p><strong>Suitability:</strong>  Used as RCC (Reinforced Cement Concrete) in the construction of slabs, beams, columns, footings, etc.</p>
-  </div>
-  <div>
-    <h1>M30 GRADE</h1>
-    <p><strong>Mix Ratio:</strong>Moderate Mix Designs as per IS-10262-2009</p>
-    <p><strong>Suitability:</strong>   Used as RCC (Reinforced Cement Concrete) in the construction of slabs, beams, columns, footings, etc.</p>
-  </div>
-  <div>
-    <h1>M35 GRADE</h1>
-    <p><strong>Mix Ratio:</strong> Moderate Mix Designs as per IS-10262-2009</p>
-    <p><strong>Suitability:</strong> Used as RCC (Reinforced Cement Concrete) in the construction of slabs, beams, columns, footings, etc.</p>
-  </div>
-</div>
-  </div> */}
-
-{/* <div>
-  <div className="projects-grade-left">
-    <h3>Mixers</h3>
-    <ul>
-      <li>Premiere Mix</li>
-      <li>Residential Mix</li>
-      <li>Micro Tech Mix</li>
-      <li>Special Products</li>
-    </ul>
-</div>
-<div className="projects-grade-right">
- <div className='mt-5'>
-  <p>A-MIX’s high-strength concrete has high compressive strength and is appropriate for high-rise buildings, long-span bridges, ultra-thin white topping and constructions in coastal areas, etc.
-  </p>
-  <p className='mt-5'>The concrete exhibits superior mechanical properties, including strength, durability, resistance to chemical attack and workability. It is achieved by adding higher but calibrated concentrations of mineral admixtures as compared to conventional concrete.</p>
- </div>
-</div>
-  </div> */}
-
-{/* <div>
-  <div className="projects-grade-left">
-    <h3>Mixers</h3>
-    <ul>
-      <li>Premiere Mix</li>
-      <li>Residential Mix</li>
-      <li>Micro Tech Mix</li>
-      <li>Special Products</li>
-    </ul>
-</div>
-<div className="projects-grade-right">
- <div className='mt-5'>
-  <p>A-MIX’s high-performance concrete with superior mechanical properties, including strength, durability, resistance to chemical attack and workability, is most suited for specialised applications.
-  </p>
-<ul style={{listStyleType:'disc'}} className='ms-5 fw-bold'>
-  <li>Floor Nation Mix</li>
-  <li>Fiber Mix</li>
-  <li>Enviro Mix</li>
-  <li>Poro Foam Mix</li>
-  <li>Waterproof Mix</li></ul> 
-</div>
-</div>
-  </div> */}
-  
 
 
 </div>
